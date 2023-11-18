@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-image: url(images/adv.jpeg);
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.icon {
+  height: 20px;
+  width: 30px;
+}
+.cardheader {
+  display: flex;
+  justify-content: right;
+  border: 2px solid red;
+  height: 430px;
+  width: 250px;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.textcard {
+  font-size: 40px;
+}
+button {
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  margin-left: 0px;
+  margin-top: 25px;
+  margin-right: 110px;
+  padding: 4px;
+}
