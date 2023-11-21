@@ -12,6 +12,7 @@ form {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.598);
   padding: 20px;
   border-radius: 10px;
+  width: unset;
 }
 form > *:not(hr) {
   min-height: 40px;
@@ -40,16 +41,7 @@ button {
   padding: 0 20px;
   min-height: 40px;
 }
-@media only screen and (max-width: 300px) {
-  body {
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
-  }
+@media only screen and (max-width: 420px) {
   .second-half {
     width: 270px;
     padding: 0 20px;
@@ -59,5 +51,15 @@ button {
   }
   form {
     min-width: unset;
+  }
+  .first-half h1 {
+    padding-right: 30px;
+    font-size: 34px;
+    width: 185px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  form {
+    width: 350px;
   }
 }
