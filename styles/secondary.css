@@ -59,4 +59,7 @@ hr {
   form > *:not(hr) {
     min-width: 100%;
   }
+  .second-half {
+    padding-bottom: 600px;
+  }
 }

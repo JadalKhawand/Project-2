@@ -65,4 +65,23 @@ body {
     justify-content: center;
     flex-direction: column;
   }
+  .first-half h1 {
+    font-size: 28px;
+    padding-right: 30px;
+  }
+  .first-half p {
+    font-size: 17px;
+    display: flex;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+  }
+  .first-half {
+    margin-left: 120px;
+
+    padding-top: 800px;
+  }
 }
