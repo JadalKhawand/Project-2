@@ -1,42 +1,62 @@
 .second-half {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  form {
-    border: 1px solid gray;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.598);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  form > *:not(hr) {
-    min-height: 40px;
-    min-width: 350px;
-    text-align: center;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.598);
+  padding: 20px;
+  border-radius: 10px;
+}
+form > *:not(hr) {
+  min-height: 40px;
+  min-width: 350px;
+  text-align: center;
+}
 
-  hr {
+hr {
+  width: 100%;
+}
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.305);
+}
+
+button {
+  color: white;
+  border-radius: 5px;
+  background-color: #1877f2;
+  border: none;
+}
+
+.green-button {
+  background-color: #42b72a;
+  padding: 0 20px;
+  min-height: 40px;
+}
+hr {
+  width: 100%;
+}
+
+/* @media only screen and (max-width: 600px) {
+  .second-half {
     width: 100%;
   }
-  input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.305);
+  form > *:not(hr) {
+    min-width: 100%;
   }
-
-  button {
-    color: white;
-    border-radius: 5px;
-    background-color: #1877f2;
-    border: none;
+} */
+@media only screen and (max-width: 600px) {
+  .second-half {
+    width: 100%;
   }
-
-  .green-button {
-    background-color: #42b72a;
-    padding: 0 20px;
-    min-height: 40px;
+  form > *:not(hr) {
+    min-width: 100%;
   }
+}
