@@ -15,7 +15,7 @@ form {
 }
 form > *:not(hr) {
   min-height: 40px;
-  min-width: 350px;
+  width: 100%;
   text-align: center;
 }
 
@@ -40,26 +40,24 @@ button {
   padding: 0 20px;
   min-height: 40px;
 }
-hr {
-  width: 100%;
-}
-
-/* @media only screen and (max-width: 600px) {
-  .second-half {
-    width: 100%;
-  }
-  form > *:not(hr) {
-    min-width: 100%;
-  }
-} */
-@media only screen and (max-width: 600px) {
-  .second-half {
-    width: 100%;
-  }
-  form > *:not(hr) {
-    min-width: 100%;
+@media only screen and (max-width: 300px) {
+  body {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
   }
   .second-half {
-    padding-bottom: 600px;
+    width: 270px;
+    padding: 0 20px;
+  }
+  .first-half {
+    width: 270px;
+  }
+  form {
+    min-width: unset;
   }
 }
